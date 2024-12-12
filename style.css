@@ -1,0 +1,317 @@
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.next-button {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-top: 20px;
+    background-color: #ff3f8c;
+    color: white;
+    font-family: 'The Girl Next Door', cursive;
+    font-weight: bolder;
+    border: solid;
+    border-radius: 20px;
+    border-color: #fff;
+    padding: 10px 10px 0px;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 0px #7c16d0,
+    2px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.next-button:hover {
+    background-color: #a33cfd;
+}
+
+.titleheader{
+    position: fixed;
+    left: 40%;
+    top:0px;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px  #3700ad,
+                 4px 4px 0px hsl(337, 97%, 58%),
+                 6px 6px 0px #dda301,
+                 8px 8px 0px #00c989,
+                 10px 10px 0px #553c9a;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#player-name {
+    border: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #ff418d;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px 0px 5px 0px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.music-button {
+    position: fixed;
+    top: 10px;
+    left: 95px; 
+    z-index: 10; 
+    font-size: 40px;
+    background-color: #ff3f8c;
+    border: solid;
+    border-radius: 50%;
+    border-color: #fff;
+    padding:6px 13px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 0px #7c16d0,
+    2px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.music-button:hover {
+    background-color: #a33cfd;
+}
+
+.settings-link {
+    position: fixed;
+    top: 9px;
+    left: 180px;  
+    z-index: 10; 
+    font-size: 30px;
+    background-color: #ffffff;
+    padding: 20px 15px 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 2px rgba(174, 1, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+}
+
+.menu-container {
+    position: relative; 
+    display: inline-block;
+}
+  
+.settings-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;  
+    z-index: 10; 
+    font-size: 40px;
+    background-color: #ff3f8c;
+    border: solid;
+    border-radius: 50%;
+    border-color: #fff;
+    padding:6px 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 0px #7c16d0,
+    2px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+  
+.settings-button:hover {
+    background-color: #a33cfd;
+}
+  
+.dropdown-menu a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+  
+.dropdown-menu a:hover {
+    background-color: #729cff;
+    color: #fff;
+    text-shadow: 1px 1px 0px #7c16d0,
+    2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+  
+.menu-container:hover .dropdown-menu {
+    display: block; 
+}
+  
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff3b2;
+    overflow-x: hidden;
+}
+  
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+      "a b"
+      "a b";
+}
+#imageclass{
+    grid-area:b;
+}
+
+#image-container {
+    top: 15%;
+    max-width: 35%;
+    height: auto;
+    margin:0 auto 0 500px;
+    border-radius: 50%;
+    box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.8);
+}
+
+.content {
+    grid-area: a;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    
+}
+
+.header {
+    font-size: 30px;
+    font-family: 'times new roman', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #3700ad;
+    background-color: rgba(254, 46, 139, 0.3);
+    border-left: dotted;
+    border-right: dotted;
+    border-radius: 15px;
+    padding: 10px 0px 10px 23px;
+    width: 380px;
+    margin: 50px 0 0 10px;
+}
+
+.text {
+    background-color: rgba(254, 46, 139, 0.3);
+    padding: 40px 30px;
+    font-size: 23px;
+    color: white;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 0px #3700ad;
+    border-radius: 25px 100px / 100px;
+    width: 350px;
+    margin: 20px 20px 0 0px;
+}
+
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+    border: solid;
+    border-radius: 50%;
+    border-color: #fff;
+    box-shadow: 8px 0px 30px rgba(255, 242, 0, 0.9);
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+#shoe-image {
+    position:absolute;
+    left: 325px;
+    margin-top: 60px;
+    border: solid;
+    border-radius: 30px;
+    border-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+}
+
+#shoe-image:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#game-container {
+    text-align: left;
+}
+
+#game-image {
+    width: auto;
+    max-width: 100%;
+    height: 90%;
+    border-radius: 30pc;
+    box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.8);
+}
+
+#overlay-content {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-header {
+    font-size: 35px;
+    font-family: 'The Girl Next Door', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px  #3700ad,
+                 4px 4px 0px hsl(270, 23%, 58%),
+                 6px 6px 0px #00c917,
+                 8px 8px 0px #feca3d,
+                 10px 10px 0px #553c9a;
+    background-color: #ff418d;
+    border-left: dotted;
+    border-right: dotted;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 0px 20px 10px;
+    
+}
+     
+.start-button {
+    display: flex;
+    position:fixed;
+    top: 110%;
+    left: 40%;
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+    font-family: "The Girl Next Door", cursive;
+    font-weight: bolder;
+    padding: 0px 10px;
+    color: rgb(255, 255, 255);
+    background-color: #ff3f8c;
+    border: solid 3px;
+    border-radius: 20px;
+    border-color: #ffffff;
+    box-shadow: 10px 5px 20px #262626;
+    cursor: pointer;
+    text-shadow: 2px 2px 0px #7c16d0,
+    4px 4px 3px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.4s ease, transform 0.7s ease;
+}
+        
+.start-button:hover {
+    background-color: #a33cfd; 
+}
+    
+.cp {
+    position: absolute;
+    bottom: -5px;;
+    right: 0;
+    text-align: end;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.9);
+    margin: 0px;
+    padding: 30px;
+}
+    

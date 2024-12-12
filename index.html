@@ -1,0 +1,50 @@
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askungens Äventyr</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-container">
+        <button class="settings-button">⚙️</button>
+        <div class="dropdown-menu">
+          <button id="toggle-music-button" class="music-button">🎵</button>
+          <a id="startover" class="settings-link">Spela igen</a>
+        </div>
+        <h1  class="titleheader" id="title"></h1>
+      </div>
+
+      <div id="game-start-container">
+        <img id="game-image" src="/images/img.jpg" alt="Bilden av Askungen">
+      
+      <div id="overlay-content">
+         <h1 class="main-header">Askungens Äventyr</h1>
+         <a id="start-button" class="start-button">Spela</a>
+         <input type="text" id="player-name" placeholder="Ditt namn">
+        </div>
+        <p class="cp">© 2024 Mali Roshanshah</p>
+      </div>
+
+      <div id="game-container">
+        <div id="imageclass">
+        <img id="image-container" class="content" alt="Askungen">
+        
+        <div id="shoe-container" style="display: none;">
+          <img id="shoe-image" src="images/shoe.png" alt="Glas-sko">
+        </div>
+        
+    <div id="content" class="content">
+        <h1 id="textheader"class="header"></h1>
+        <p id="textmain" class="text"></p>
+        <div id="choices"></div>
+       <div id="images">
+    </div>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
